@@ -1034,7 +1034,7 @@ h6, .h6 {
     bottom: 0;
     background-color: var(--primary);
     width: var(--sidebar-width);
-    padding: 64px 24px 40px;
+    padding: 44px 24px 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

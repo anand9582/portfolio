@@ -380,6 +380,33 @@ document.querySelectorAll('#image').forEach(function(img) {
 });
 
 
+document.getElementById("downloadButton").addEventListener("click", function() {
+    // Create a sample resume data (can be replaced with actual resume data)
+    var resumeData = "Your resume content goes here";
+
+    // Create a Blob object from the resume data
+    var blob = new Blob([resumeData], { type: 'text/plain' });
+
+    // Create a temporary URL for the blob
+    var url = URL.createObjectURL(blob);
+
+    // Create a temporary link element
+    var link = document.createElement('a');
+    link.href = url;
+    link.download = 'resume.pdf'; // Name of the downloaded file
+
+    // Append the link to the body
+    document.body.appendChild(link);
+
+    // Trigger the click event of the link to start the download
+    link.click();
+
+    // Cleanup: remove the link and revoke the URL
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+});
+
+
 // /**
 //  * Theme settings
 //  *------------------------------------*/
