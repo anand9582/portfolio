@@ -573,46 +573,47 @@
             <!-- End:: blog section -->
 
             <!-- Start:: contact section -->
-            <section id="contact" class="section">
-                <div class="container">
-                    <div class="mb-64 relative">
-                        <span class="section__subtitle">Let’s talk</span>
-                        <h2 class="mb-0">Get in <span class="fw-semibold">touch</span></h2>
+      <section id="contact" class="section">
+    <div class="container">
+        <div class="mb-64 relative">
+            <span class="section__subtitle">Let’s talk</span>
+            <h2 class="mb-0">Get in <span class="fw-semibold">touch</span></h2>
+        </div>
+        <div class="row">
+            <!-- Contact form -->
+            <div class="contact-form relative">
+                <form id="contactForm" class="relative"   method="POST">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
                     </div>
-                    <div class="row">
-                        <!-- Contact form -->
-                        <div class="contact-form relative">
-                            <form class="relative">
-                                <div class="form-group">
-                                    <label for="name" class="form-label">Name</label>
-                                    <input type="text" id="name" class="form-control" placeholder="Enter your name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="text" id="email" class="form-control" placeholder="Enter your email id">
-                                </div>
-                                <div class="form-group">
-                                    <label for="msg" class="form-label">Message</label>
-                                    <textarea name="msg" id="msg" cols="30" rows="5" class="form-control" placeholder="Write your words"></textarea>
-                                </div>
-                                <button type="submit" id="contact_btn" class="btn btn--primary">
-                                    <span>Send Now</span>
-                                    <span class="btn__icon">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill="currentColor" d="M21.7264 2.95706L16.2732 22.0433C16.1222 22.5718 15.7976 22.5958 15.5561 22.1127L10.9998 13.0002L1.92266 9.36931C1.41298 9.16544 1.41929 8.86034 1.9567 8.6812L21.0429 2.31913C21.5714 2.14297 21.8745 2.43878 21.7264 2.95706ZM19.0351 5.0966L6.81197 9.17097L12.4486 11.4256L15.4893 17.507L19.0351 5.0966Z"/>
-                                        </svg>
-                                    </span>
-                                </button>
-                                <div id="form_message"></div>
-                            </form>
-                        </div>
-                        <!-- Contact cover image -->
-                        <div class="contact-cover relative">
-                            <img src="images/hero/hero-2.png" class="contact-cover__image" alt="">
-                        </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email id" required>
                     </div>
-                </div>
-            </section>
+                    <div class="form-group">
+                        <label for="msg" class="form-label">Message</label>
+                        <textarea name="message" id="msg" cols="30" rows="5" class="form-control" placeholder="Write your words" minlength="5" required></textarea>
+                    </div>
+                    <button type="submit" id="contact_btn" class="btn btn--primary">
+                        <span>Send Now</span>
+                        <span class="btn__icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" d="M21.7264 2.95706L16.2732 22.0433C16.1222 22.5718 15.7976 22.5958 15.5561 22.1127L10.9998 13.0002L1.92266 9.36931C1.41298 9.16544 1.41929 8.86034 1.9567 8.6812L21.0429 2.31913C21.5714 2.14297 21.8745 2.43878 21.7264 2.95706ZM19.0351 5.0966L6.81197 9.17097L12.4486 11.4256L15.4893 17.507L19.0351 5.0966Z"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <div id="form_message"></div>
+                </form>
+            </div>
+            <!-- Contact cover image -->
+            <div class="contact-cover relative">
+                <img src="images/hero/hero-2.png" class="contact-cover__image" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
             <!-- End:: contact section -->
 
             <!-- Start:: footer -->
